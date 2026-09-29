@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Project Creation & Deployment</title>
+<style>
+:root{--bg:#050b1f;--pg:#0a1533;--card:#0f1e45;--line:#22377a;--tx:#e8eeff;--mut:#9fb0dd;--ac:#3ea6ff;--ac2:#22d3b6;--wm:#ffb454;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Segoe UI",Inter,system-ui,Arial,sans-serif;font-size:13px;line-height:1.4}
+.wrap{overflow-x:auto;padding:16px}
+.page{width:1240px;margin:0 auto 20px;background:linear-gradient(160deg,#0b1a40,var(--pg) 60%);border:1px solid var(--line);border-radius:14px;padding:26px 30px;page-break-after:always}
+h1{margin:0;font-size:30px;letter-spacing:.5px}
+.sub{color:var(--ac);font-size:15px;margin:2px 0 4px}
+.pt{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:14px}
+.tag{background:var(--ac);color:#03122e;font-weight:700;padding:4px 12px;border-radius:20px;font-size:12px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+h2{margin:0 0 8px;font-size:14px;color:var(--ac2);font-weight:700}
+ul{margin:0;padding-left:16px}li{margin:2px 0}
+table{width:100%;border-collapse:collapse}
+td{padding:4px 6px;border-bottom:1px solid #1b2e66}tr:last-child td{border:0}
+td:first-child{color:var(--mut);width:38%}
+.ic{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:22px;padding:0 5px;border-radius:6px;font-size:11px;font-weight:800;color:#03122e;margin-right:6px;vertical-align:middle}
+.b1{background:#3ea6ff}.b2{background:#ffd43b}.b3{background:#22d3b6}.b4{background:#ff7a59}.b5{background:#c9d4ff}.b6{background:#b18cff}.b7{background:#7ee787}
+.flow{display:flex;flex-direction:column;align-items:center;gap:0}
+.node{background:#132a63;border:1px solid var(--ac);border-radius:8px;padding:5px 12px;text-align:center;width:100%;font-weight:600}
+.arr{color:var(--ac2);font-size:16px;line-height:1}
+.row{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.chip{background:#132a63;border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:12px}
+.row .arr{font-size:14px}
+code,.code{font-family:Consolas,"Courier New",monospace;background:#050d26;border:1px solid var(--line);border-radius:6px;color:#8fe3ff;font-size:12px}
+.code{display:block;padding:7px 10px;white-space:pre;overflow-x:auto;margin-top:6px}
+code{padding:1px 5px}
+.url{color:var(--wm);font-weight:700}
+.final{margin-top:14px;background:linear-gradient(90deg,#0d3a7a,#0a5d78);border:1px solid var(--ac);border-radius:12px;padding:12px 14px}
+.final h2{color:#fff;text-align:center;font-size:15px}
+.final .chip{background:#03122e;border-color:var(--ac2);font-weight:800;font-size:13px;padding:6px 10px}
+.final .row{justify-content:center;gap:5px}
+.hl{border-color:var(--ac2)}
+small{color:var(--mut)}
+@media print{@page{size:1240px 870px;margin:0}body{background:none}.wrap{padding:0}.page{margin:0;border-radius:0;border:0;height:870px}}
+</style></head><body><div class="wrap">
+
+<!-- PAGE 1 -->
+<section class="page">
+<div class="pt"><div><h1>PROJECT CREATION &amp; DEPLOYMENT</h1><div class="sub">From Idea → Development → GitHub → Render → Live Application</div></div><span class="tag">PAGE 1 · PROJECT DEVELOPMENT</span></div>
+<div class="grid g3">
+ <div class="grid" style="align-content:start">
+  <div class="card"><h2>1. Project planning</h2><ul><li>Define the problem statement</li><li>Identify required features</li><li>Select the technology stack</li><li>Design the basic application architecture</li></ul></div>
+  <div class="card"><h2>2. Development tools</h2><table>
+   <tr><td>Code Editor</td><td><span class="ic b1">VS</span>VS Code</td></tr>
+   <tr><td>Frontend</td><td><span class="ic b2">JS</span>HTML, CSS, JavaScript</td></tr>
+   <tr><td>Backend</td><td><span class="ic b3">Py</span>Python + Flask</td></tr>
+   <tr><td>Machine Learning</td><td><span class="ic b6">ML</span>Pandas, NumPy, Scikit-learn</td></tr>
+   <tr><td>Database</td><td><span class="ic b4">DB</span>MySQL</td></tr>
+   <tr><td>API Testing</td><td><span class="ic b7">API</span>Postman</td></tr>
+   <tr><td>Version Control</td><td><span class="ic b5">Git</span>Git</td></tr></table></div>
+ </div>
+ <div class="card"><h2>3. Build the application</h2>
+  <div class="flow"><div class="node">PROJECT</div><div class="arr">↓</div>
+  <div class="node"><span class="ic b2">JS</span>FRONTEND — HTML / CSS / JavaScript</div><div class="arr">↓</div>
+  <div class="node"><span class="ic b3">Py</span>BACKEND — Python + Flask</div><div class="arr">↓</div>
+  <div class="node">ML MODEL / DATABASE</div></div>
+  <div style="margin-top:10px"><b style="color:var(--ac)">Frontend</b><ul><li>Create webpages using HTML</li><li>Design using CSS</li><li>Add functionality using JavaScript</li></ul></div>
+  <div style="margin-top:8px"><b style="color:var(--ac)">Backend</b><ul><li>Create Flask application</li><li>Create routes / APIs</li><li>Process user requests</li><li>Connect ML model / database</li></ul></div>
+ </div>
+ <div class="grid" style="align-content:start">
+  <div class="card"><h2>Machine learning pipeline</h2>
+   <div class="flow" style="gap:0">
+   <div class="node">Dataset</div><div class="arr">↓</div><div class="node">Data Cleaning</div><div class="arr">↓</div><div class="node">Data Analysis</div><div class="arr">↓</div><div class="node">Feature Engineering</div><div class="arr">↓</div><div class="node">Model Training</div><div class="arr">↓</div><div class="node">Model Evaluation</div><div class="arr">↓</div><div class="node hl">Save Model</div></div></div>
+  <div class="card hl"><h2>4. Local testing</h2>
+   <div class="row"><span class="chip"><span class="ic b1">VS</span>VS Code</span><span class="arr">→</span><span class="chip">Run Flask</span><span class="arr">→</span><span class="chip">🌐 Browser</span></div>
+   <div class="code">http://127.0.0.1:5000</div>
+   <ul style="margin-top:8px"><li>Test frontend, backend, database</li><li>Test ML model</li><li>Test user inputs and predictions</li><li>Fix errors before deployment</li></ul></div>
+ </div>
+</div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+<div class="pt"><div><h1>GITHUB &amp; DEPLOYMENT</h1><div class="sub">Ship the project: GitHub → Render → Live Application</div></div><span class="tag">PAGE 2 · GITHUB &amp; DEPLOYMENT</span></div>
+<div class="grid g3">
+ <div class="grid" style="align-content:start">
+  <div class="card"><h2>5. Prepare the project</h2>
+   <div class="row"><span class="chip">requirements.txt</span><span class="chip">.gitignore</span><span class="chip">README.md</span></div>
+   <div class="code">pip freeze &gt; requirements.txt
+
+git init
+git add .
+git commit -m "Initial project"</div></div>
+  <div class="card"><h2>6. Upload to GitHub</h2>
+   <div class="row"><span class="chip"><span class="ic b1">VS</span>VS Code</span><span class="arr">→</span><span class="chip"><span class="ic b5">Git</span>Git</span><span class="arr">→</span><span class="chip"><span class="ic b6">GH</span>GitHub Repo</span></div>
+   <div class="code">git remote add origin &lt;repository-url&gt;
+git branch -M main
+git push -u origin main</div>
+   <small>GitHub stores the source code and connects the project to deployment.</small></div>
+ </div>
+ <div class="card"><h2>7. Deploy using Render</h2>
+  <div class="flow">
+   <div class="node"><span class="ic b6">GH</span>GitHub</div><div class="arr">↓</div>
+   <div class="node"><span class="ic b3">R</span>Render</div><div class="arr">↓</div>
+   <div class="node">Clone Repository</div><div class="arr">↓</div>
+   <div class="node">Install Dependencies</div><div class="arr">↓</div>
+   <div class="node">Build Application</div><div class="arr">↓</div>
+   <div class="node">Start Flask Server</div><div class="arr">↓</div>
+   <div class="node hl">Public URL</div></div>
+  <div class="code">Build:  pip install -r requirements.txt
+Start:  gunicorn app:app</div>
+  <ul style="margin-top:6px"><li>Configure environment variables</li><li>Configure database connection</li><li>Deploy the application</li></ul></div>
+ <div class="grid" style="align-content:start">
+  <div class="card hl"><h2>8. Live application</h2>
+   <div class="flow"><div class="node">USER</div><div class="arr">↓</div><div class="node">🌐 LIVE WEBSITE</div><div class="arr">↓</div><div class="node">RENDER</div><div class="arr">↓</div><div class="node"><span class="ic b3">Py</span>FLASK BACKEND</div><div class="arr">↓</div><div class="node">ML MODEL / DATABASE</div></div>
+   <div class="code url">https://your-project.onrender.com</div></div>
+  <div class="card"><h2>9. Updating the project</h2>
+   <div class="row"><span class="chip">Modify Code</span><span class="arr">→</span><span class="chip">git add</span><span class="arr">→</span><span class="chip">git commit</span><span class="arr">→</span><span class="chip">git push</span><span class="arr">→</span><span class="chip">GitHub</span><span class="arr">→</span><span class="chip">Render auto-redeploys</span><span class="arr">→</span><span class="chip hl">Updated live app</span></div></div>
+ </div>
+</div>
+<div class="final"><h2>10. FINAL WORKFLOW</h2>
+ <div class="row"><span class="chip">PLAN</span><span class="arr">→</span><span class="chip">DEVELOP</span><span class="arr">→</span><span class="chip">TEST LOCALLY</span><span class="arr">→</span><span class="chip">GIT</span><span class="arr">→</span><span class="chip">GITHUB</span><span class="arr">→</span><span class="chip">RENDER</span><span class="arr">→</span><span class="chip">CONFIGURE</span><span class="arr">→</span><span class="chip">DEPLOY</span><span class="arr">→</span><span class="chip">TEST LIVE</span><span class="arr">→</span><span class="chip">UPDATE</span></div></div>
+</section>
+
+</div></body></html>
