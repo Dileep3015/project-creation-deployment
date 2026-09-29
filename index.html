@@ -8,7 +8,7 @@
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--tx);font-family:"Segoe UI",Inter,system-ui,Arial,sans-serif;font-size:13px;line-height:1.4}
 .wrap{overflow-x:auto;padding:16px}
-.page{width:1240px;margin:0 auto 20px;background:linear-gradient(160deg,#0b1a40,var(--pg) 60%);border:1px solid var(--line);border-radius:14px;padding:26px 30px;page-break-after:always}
+.page{width:100%;max-width:1240px;margin:0 auto 20px;background:linear-gradient(160deg,#0b1a40,var(--pg) 60%);border:1px solid var(--line);border-radius:14px;padding:26px 30px;page-break-after:always}
 h1{margin:0;font-size:30px;letter-spacing:.5px}
 .sub{color:var(--ac);font-size:15px;margin:2px 0 4px}
 .pt{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:14px}
@@ -39,7 +39,23 @@ code{padding:1px 5px}
 .final .row{justify-content:center;gap:5px}
 .hl{border-color:var(--ac2)}
 small{color:var(--mut)}
-@media print{@page{size:1240px 870px;margin:0}body{background:none}.wrap{padding:0}.page{margin:0;border-radius:0;border:0;height:870px}}
+@media(max-width:900px){
+body{font-size:14px}
+.wrap{padding:10px}
+.page{padding:16px 14px;border-radius:10px;margin-bottom:14px}
+h1{font-size:22px;line-height:1.15}
+.sub{font-size:13px}
+.pt{flex-direction:column;align-items:flex-start;gap:8px}
+.g2,.g3{grid-template-columns:1fr}
+.grid{gap:12px}
+.card{padding:12px}
+td:first-child{width:42%}
+.row{gap:5px}
+.chip{font-size:12px}
+.final .chip{font-size:12px;padding:5px 8px}
+.code{font-size:11.5px}
+}
+@media print{@page{size:1240px 870px;margin:0}body{background:none}.wrap{padding:0}.page{width:1240px;max-width:none;margin:0;border-radius:0;border:0;height:870px}}
 </style></head><body><div class="wrap">
 
 <!-- PAGE 1 -->
